@@ -59,6 +59,6 @@ while True:
 
     DCM = orient.estimate(w1=accel, w2=mag)
     q = np.chiaverini(DCM)
-    print("w",q[0],"w","a",q[1],"a","b",q[2],"b","c",q[3],"c")
+    print("w",q[0],"w","a",q[1],"a","b",q[2],"b","c",q[3],"c")    #use "\n" at the end to break the line inorder to feed it to the openGL simulation code
     euler = quat_to_euler(q)
     print("Euler :",euler,"\n")
